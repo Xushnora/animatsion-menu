@@ -6,7 +6,7 @@
 }
 
 .container{
-    width: 1200px;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -15,43 +15,153 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(168, 164, 164);
+    background-color: #3b3b3b;
 }
 
-.portion{
+.content{
+    width: 300px;
+    height: 570px;
     position: relative;
+    left: 600px;
+    top: 200px;
+    margin-bottom: 10px;
+
 }
 
-.statistik{
-    border: 2px solid transparent;
-    width: 239px;
-    height: 252px;
-    border-radius: 0px 0px 12px 12px;
-    background-color: #fff;
-    display: inline-block;
+.green{
+    background-color: green;
+    animation: micro-animation-1 4s infinite both;
+    animation-delay: 0s;
+}
+
+.yellow{
+    background-color: yellow;
+    animation: micro-animation-2 4s infinite both;
+    animation-delay: -1s;
+}
+
+.blue{
+    background-color: blue;
+    animation: micro-animation-3 4s infinite both;
+    animation-delay: -2s;
+}
+
+.red{
+    background-color: red;
+    animation: micro-animation-4 4s infinite both;
+    animation-delay: -3s;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid transparent;
+    border-radius: 6px;
     position: absolute;
-    top: 9%;
+
+    /* animation: micro-animation 4s infinite both; */
 }
 
-.stk-tt{
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 26px;
-    letter-spacing: 0.01em;
-    color: #000339;
-    margin-bottom: 8px;
+@keyframes micro-animation {
+    0% {
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(100px, 0);
+    }
+    50%{
+        transform: translate(100px, 100px);
+    }
+    75%{
+        transform: translate(0px, 100px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
 }
 
-.stk-text{
-    font-size: 12px;
-    line-height: 18px;
-    color: #a7a7a7;
-    margin-bottom: 25px;
+
+
+@keyframes micro-animation-1 {
+    0% {
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(100px, 0);
+    }
+    50%{
+        transform: translate(100px, 100px);
+    }
+    75%{
+        transform: translate(0px, 100px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes micro-animation-2{
+    0% {
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(100px, 0);
+    }
+    50%{
+        transform: translate(100px, 100px);
+    }
+    75%{
+        transform: translate(0px, 100px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes  micro-animation-3{
+    0% {
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(100px, 0);
+    }
+    50%{
+        transform: translate(100px, 100px);
+    }
+    75%{
+        transform: translate(0px, 100px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+
+@keyframes micro-animation-4{
+    0% {
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(100px, 0);
+    }
+    50%{
+        transform: translate(100px, 100px);
+    }
+    75%{
+        transform: translate(0px, 100px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+.title.box{
+  
 }
 
 .title{
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 45px;
-    color: #000339;
+    color: #fff;
+    position: absolute;
+    bottom: 300px;
+    left: 20px;
 }
